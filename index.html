@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Obstacles | Business Intelligence & Production Hub</title>
+    <title>OBSTACLES | Intelligence Hub 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
@@ -11,10 +11,9 @@
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #fcfcf9; }
         h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
-        .gradient-bg { background: linear-gradient(135deg, #0f1c0f 0%, #1e3a1a 100%); }
-        .glass { background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(12px); }
+        .gradient-dark { background: linear-gradient(135deg, #0f1c0f 0%, #1e3a1a 100%); }
+        .glass { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(12px); }
         .card-hover:hover { transform: translateY(-8px); transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-        .chart-container { position: relative; height: 400px; width: 100%; }
     </style>
 </head>
 <body class="text-slate-800 antialiased">
@@ -22,109 +21,166 @@
     <nav class="fixed w-full z-50 glass border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <span class="text-2xl font-bold tracking-tighter text-emerald-900">OBSTACLES</span>
-            <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest">
+            <div class="hidden md:flex space-x-6 text-xs font-medium uppercase tracking-widest">
                 <a href="#markt" class="hover:text-emerald-600 transition">Markt</a>
                 <a href="#zielgruppen" class="hover:text-emerald-600 transition">Zielgruppen</a>
-                <a href="#produktion" class="hover:text-emerald-600 transition">Produktion</a>
-                <a href="#kosten" class="hover:text-emerald-600 transition text-emerald-700 font-bold">Kosten-Check</a>
-                <a href="#downloads" class="hover:text-emerald-600 transition">Downloads</a>
+                <a href="#produktion" class="hover:text-emerald-600 transition">EU-Produktion</a>
+                <a href="#kosten" class="hover:text-emerald-600 transition">Kosten-Check</a>
+                <a href="#downloads" class="hover:text-emerald-600 transition font-bold text-emerald-700">Downloads</a>
             </div>
         </div>
     </nav>
 
-    <section class="relative h-[90vh] flex items-center justify-center overflow-hidden">
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <div class="gradient-bg h-full w-full"></div>
-            <div class="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/natural-paper.png')]"></div>
+            <div class="gradient-dark h-full w-full"></div>
+            <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/natural-paper.png')]"></div>
         </div>
         <div class="relative z-10 text-center text-white px-6">
-            <h1 class="text-6xl md:text-8xl mb-8 leading-tight">Clarity by Nature.</h1>
+            <h1 class="text-6xl md:text-[100px] mb-8 leading-tight">Made in EU. <br><span class="italic">Defined in Berlin.</span></h1>
             <p class="text-xl md:text-2xl font-light max-w-3xl mx-auto mb-12 opacity-80 leading-relaxed">
-                Von der Berliner Clubnacht bis zur Schweizer Präzision – die Business-Architektur für den ersten Premium Herbal Inhaler der EU.
+                Der erste Premium Lifestyle-Inhaler, der EU-Präzision mit asiatischer Tradition verbindet. [cite: 370, 439]
             </p>
-            <div class="flex flex-col md:flex-row justify-center gap-4">
-                <a href="#kosten" class="bg-emerald-500 text-white px-10 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-emerald-400 transition shadow-2xl">
-                    Kosten-Analyse ansehen
-                </a>
-                <a href="#downloads" class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-10 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-white/20 transition">
-                    PDF Reports laden
-                </a>
+            <div class="flex flex-col md:flex-row justify-center gap-6">
+                <a href="#produktion" class="bg-emerald-500 text-white px-10 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-emerald-400 transition shadow-2xl">Strategie starten</a>
+                <a href="#downloads" class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-10 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-white/20 transition">Reports laden</a>
             </div>
         </div>
-    </section>
+    </header>
 
-    <section id="markt" class="py-24 px-6 max-w-7xl mx-auto border-b border-slate-100">
-        <div class="flex flex-col lg:flex-row gap-20 items-center">
-            <div class="lg:w-1/2">
-                <h2 class="text-4xl md:text-5xl mb-10">Ein unbesetztes Marktfenster.</h2>
+    <section id="markt" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-20 items-center">
+            <div>
+                <h2 class="text-5xl mb-10 leading-tight italic">Ein Markt im Aufbruch.</h2>
                 <p class="text-lg text-slate-600 mb-8 leading-relaxed">
-                    Deutschland ist der größte Kräutermarkt Europas[cite: 159]. Während Wellness-Accessoires boomen, fehlt eine Premium-Marke für tragbare Inhalatoren. Berlin bietet als Launch-Metropole den perfekten "Blue Ocean" für Obstacles[cite: 165, 300].
+                    Deutschland ist mit einem Anteil von ca. 22 % der größte Kräutermarkt in Europa und bietet durch eine tiefe phytotherapeutische Tradition ein ideales Umfeld für Obstacles[cite: 72, 75, 141]. Der Trend zu präventiver Gesundheit und "On-the-go Wellness" treibt die Nachfrage nach natürlichen Lifestyle-Produkten massiv voran[cite: 132, 182].
                 </p>
-                <div class="grid grid-cols-2 gap-8">
-                    <div class="border-l-4 border-emerald-500 pl-6">
-                        <span class="block text-4xl font-bold text-slate-900">28,3 Mrd. $</span>
-                        <span class="text-sm uppercase tracking-wider text-slate-500">EU Herbal Market 2024 [cite: 159]</span>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-emerald-50 p-6 rounded-3xl">
+                        <span class="block text-4xl font-bold text-emerald-800">28,3 Mrd. $</span>
+                        <span class="text-xs uppercase tracking-widest text-emerald-600 font-bold">EU Herbal Market 2024 [cite: 72]</span>
                     </div>
-                    <div class="border-l-4 border-emerald-500 pl-6">
-                        <span class="block text-4xl font-bold text-slate-900">70 %</span>
-                        <span class="text-sm uppercase tracking-wider text-slate-500">Nachhaltigkeits-Fokus [cite: 204]</span>
+                    <div class="bg-emerald-50 p-6 rounded-3xl">
+                        <span class="block text-4xl font-bold text-emerald-800">13,3 %</span>
+                        <span class="text-xs uppercase tracking-widest text-emerald-600 font-bold">Wachstum (CAGR) DE [cite: 72]</span>
                     </div>
                 </div>
             </div>
-            <div class="lg:w-1/2 w-full bg-white p-8 rounded-3xl shadow-xl border border-slate-100">
-                <h4 class="text-center text-slate-400 uppercase text-xs tracking-widest mb-6 font-bold">Wachstumsprognose Deutschland (Mrd. USD)</h4>
+            <div class="bg-white p-10 rounded-[40px] shadow-2xl border border-slate-100">
+                <h4 class="text-center text-slate-400 uppercase text-[10px] tracking-widest mb-6 font-bold">Marktentwicklung Deutschland (2024 - 2035)</h4>
                 <canvas id="marketChart"></canvas>
             </div>
         </div>
     </section>
 
-    <section id="zielgruppen" class="py-24 bg-slate-50 px-6">
+    <section id="zielgruppen" class="py-24 bg-slate-100 px-6">
         <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-20">
-                <h2 class="text-4xl md:text-5xl mb-6 italic">Wer atmet Obstacles?</h2>
-                <p class="text-slate-500 max-w-2xl mx-auto text-lg">Vom Biohacker bis zum Pendler: Wir bedienen fünf hochaffine Lebenswelten mit einer Marktdurchdringung von bis zu 3% in Jahr 3[cite: 330, 349, 368].</p>
+            <div class="text-center mb-16">
+                <h2 class="text-5xl mb-4 italic">Fünf Lebenswelten.</h2>
+                <p class="text-slate-500 text-lg">Vom Club in Berlin-Friedrichshain bis zur Autobahnrast: Obstacles schafft Momente der Klarheit[cite: 363].</p>
             </div>
             
-            <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
-                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 card-hover">
-                    <div class="w-14 h-14 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6 text-emerald-700">
-                        <i data-lucide="leaf" class="w-8 h-8"></i>
-                    </div>
-                    <h3 class="text-xl mb-1">Lena (24-35)</h3>
-                    <p class="text-xs font-bold uppercase text-emerald-600 mb-6">Wellness-Rituale</p>
-                    <p class="text-sm text-slate-500 leading-relaxed italic">"Kein Medikament. Ein Ritual für den klaren Kopf." [cite: 311]</p>
+            
+            <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-6 mt-12">
+                <div class="bg-white p-8 rounded-3xl shadow-sm card-hover">
+                    <h3 class="text-xl mb-1 font-bold">Lena</h3>
+                    <p class="text-[10px] font-black uppercase text-emerald-600 mb-4 tracking-tighter">Wellness-Urbanistin [cite: 223]</p>
+                    <p class="text-xs text-slate-500 mb-4">Sucht Rituale statt Medikamente. Fokus auf Self-Care & Ästhetik[cite: 224, 234].</p>
+                    <div class="text-[10px] text-emerald-700 font-bold">SAM: 900k [cite: 243]</div>
                 </div>
-                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 card-hover">
-                    <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mb-6 text-blue-700">
-                        <i data-lucide="zap" class="w-8 h-8"></i>
-                    </div>
-                    <h3 class="text-xl mb-1">Max (27-40)</h3>
-                    <p class="text-xs font-bold uppercase text-blue-600 mb-6">Performance</p>
-                    <p class="text-sm text-slate-500 leading-relaxed italic">Biohacking für Deep-Work Sessions ohne Koffein-Crash[cite: 331].</p>
+                <div class="bg-white p-8 rounded-3xl shadow-sm card-hover">
+                    <h3 class="text-xl mb-1 font-bold">Max</h3>
+                    <p class="text-[10px] font-black uppercase text-blue-600 mb-4 tracking-tighter">Biohacker [cite: 223]</p>
+                    <p class="text-xs text-slate-500 mb-4">Optimiert seinen Atem für Deep-Work Sessions & Performance[cite: 244, 250].</p>
+                    <div class="text-[10px] text-blue-700 font-bold">SAM: 600k [cite: 262]</div>
                 </div>
-                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 card-hover">
-                    <div class="w-14 h-14 bg-purple-100 rounded-2xl flex items-center justify-center mb-6 text-purple-700">
-                        <i data-lucide="sparkles" class="w-8 h-8"></i>
-                    </div>
-                    <h3 class="text-xl mb-1">Yara (18-28)</h3>
-                    <p class="text-xs font-bold uppercase text-purple-600 mb-6">Nightlife</p>
-                    <p class="text-sm text-slate-500 leading-relaxed italic">"Pfefferminze auf Speed – ohne Speed." [cite: 425]</p>
+                <div class="bg-white p-8 rounded-3xl shadow-sm card-hover">
+                    <h3 class="text-xl mb-1 font-bold">Yara</h3>
+                    <p class="text-[10px] font-black uppercase text-purple-600 mb-4 tracking-tighter">Nachtschwärmerin [cite: 223]</p>
+                    <p class="text-xs text-slate-500 mb-4">Frischekick & soziales Signal in der Clubnacht[cite: 263, 274].</p>
+                    <div class="text-[10px] text-purple-700 font-bold">SAM: 1,2 Mio. [cite: 281]</div>
                 </div>
-                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 card-hover">
-                    <div class="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center mb-6 text-orange-700">
-                        <i data-lucide="navigation" class="w-8 h-8"></i>
-                    </div>
-                    <h3 class="text-xl mb-1">Tom (30-50)</h3>
-                    <p class="text-xs font-bold uppercase text-orange-600 mb-6">Autofahrt</p>
-                    <p class="text-sm text-slate-500 leading-relaxed italic">Frische für die Langstrecke. Impulskauf an der Aral[cite: 373, 432].</p>
+                <div class="bg-white p-8 rounded-3xl shadow-sm card-hover">
+                    <h3 class="text-xl mb-1 font-bold">Tom</h3>
+                    <p class="text-[10px] font-black uppercase text-orange-600 mb-4 tracking-tighter">Berufspendler [cite: 223]</p>
+                    <p class="text-xs text-slate-500 mb-4">Wachheit am Steuer ohne Koffein-Zittern[cite: 282, 292].</p>
+                    <div class="text-[10px] text-orange-700 font-bold">SAM: 2,0 Mio. [cite: 300]</div>
                 </div>
-                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 card-hover">
-                    <div class="w-14 h-14 bg-cyan-100 rounded-2xl flex items-center justify-center mb-6 text-cyan-700">
-                        <i data-lucide="book-open" class="w-8 h-8"></i>
+                <div class="bg-white p-8 rounded-3xl shadow-sm card-hover">
+                    <h3 class="text-xl mb-1 font-bold">Finn</h3>
+                    <p class="text-[10px] font-black uppercase text-cyan-600 mb-4 tracking-tighter">Uni-Student [cite: 223]</p>
+                    <p class="text-xs text-slate-500 mb-4">Natürlicher Fokus in stickigen Bibliotheken[cite: 301, 312].</p>
+                    <div class="text-[10px] text-cyan-700 font-bold">SAM: 800k [cite: 319]</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="produktion" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-5xl mb-6 italic">Die EU-Produktions-Strategie.</h2>
+            <p class="text-slate-500 text-lg max-w-3xl mx-auto">
+                EU-Produktion ist strategisch entscheidend: 0% Zollrisiko, 1-2 Wochen Lieferzeit und direkte Konformität mit der EU-Kosmetikverordnung[cite: 371, 372].
+            </p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-8 mb-16">
+            <div class="lg:col-span-2 space-y-6">
+                <div class="bg-white border border-slate-200 p-8 rounded-[40px] flex gap-8 items-start card-hover shadow-sm">
+                    <div class="w-20 h-20 bg-emerald-900 rounded-3xl flex-shrink-0 flex items-center justify-center text-white font-bold italic">CH</div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2">Aromastick AG (Schweiz)</h3>
+                        <p class="text-sm text-slate-600 mb-4 italic">"Der einzige spezialisierte Nasal-Inhaler-Hersteller in Europa." [cite: 379]</p>
+                        <div class="flex flex-wrap gap-2 text-[10px] uppercase font-bold text-emerald-800">
+                            <span class="bg-emerald-50 px-3 py-1 rounded-full">Patentiertes System [cite: 382]</span>
+                            <span class="bg-emerald-50 px-3 py-1 rounded-full">Bio-Suisse [cite: 379]</span>
+                            <span class="bg-emerald-50 px-3 py-1 rounded-full">Full-Service [cite: 381]</span>
+                        </div>
                     </div>
-                    <h3 class="text-xl mb-1">Finn (19-26)</h3>
-                    <p class="text-xs font-bold uppercase text-cyan-600 mb-6">Studenten</p>
-                    <p class="text-sm text-slate-500 leading-relaxed italic">Prüfungsfokus am Uni-Kiosk für unter 5 Euro[cite: 388, 440].</p>
+                </div>
+                <div class="bg-white border border-slate-200 p-8 rounded-[40px] flex gap-8 items-start card-hover shadow-sm">
+                    <div class="w-20 h-20 bg-slate-800 rounded-3xl flex-shrink-0 flex items-center justify-center text-white font-bold italic">DE</div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2">Bergland-Pharma (Allgäu)</h3>
+                        <p class="text-sm text-slate-600 mb-4 italic">"Seit 1982 Spezialist für ätherische Öle & Naturkosmetik." [cite: 387, 388]</p>
+                        <div class="flex flex-wrap gap-2 text-[10px] uppercase font-bold text-slate-700">
+                            <span class="bg-slate-50 px-3 py-1 rounded-full">BDIH / COSMOS [cite: 387]</span>
+                            <span class="bg-slate-50 px-3 py-1 rounded-full">Eigenes Labor [cite: 387]</span>
+                            <span class="bg-slate-50 px-3 py-1 rounded-full">CPNP inklusive [cite: 391]</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-emerald-900 text-white p-10 rounded-[40px] shadow-2xl relative overflow-hidden">
+                <h3 class="text-2xl font-bold mb-6">Das Gehäuse-Setup</h3>
+                <p class="text-sm opacity-80 mb-8 leading-relaxed">
+                    Tubes kommen fast immer aus China, befüllt und zertifiziert wird in der EU. Dies erlaubt rechtlich einwandfrei das Label "Hergestellt in Deutschland/EU".
+                </p>
+                <div class="space-y-4 text-xs font-bold uppercase tracking-widest">
+                    <div class="flex justify-between border-b border-white/20 pb-2"><span>Tubes China</span> <span>€0,05-0,12 [cite: 414]</span></div>
+                    <div class="flex justify-between border-b border-white/20 pb-2"><span>Befüllung DE</span> <span>1-2 Wochen [cite: 414]</span></div>
+                    <div class="flex justify-between pb-2 text-emerald-400"><span>Zoll-Vorteil</span> <span>0 % (Inland) [cite: 371]</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-slate-50 px-6 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl text-center mb-12 italic">Zulassung & Sicherheit.</h2>
+                        <div class="grid md:grid-cols-3 gap-8 mt-12">
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200">
+                    <h4 class="font-bold mb-4">CPSR (Sicherheitsbericht)</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">Pflichtbewertung nach EU-KosmetikV 1223/2009. Bei EU-Herstellern oft im Full-Service-Preis inklusive.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200">
+                    <h4 class="font-bold mb-4">PIF (Produktdokumentation)</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">Vollständige Akte über Inhaltsstoffe, Produktion und Sicherheit. Standardmäßig bei EU-Partnern enthalten[cite: 419].</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200">
+                    <h4 class="font-bold mb-4">CPNP-Registrierung</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">Pflichtmeldung an das zentrale EU-Portal vor dem ersten Verkauf. Keine Portalgebühren[cite: 419].</p>
                 </div>
             </div>
         </div>
@@ -132,140 +188,113 @@
 
     <section id="kosten" class="py-24 px-6 max-w-7xl mx-auto">
         <div class="text-center mb-16">
-            <h2 class="text-4xl md:text-5xl mb-6">Detaillierte Kostenanalyse</h2>
-            <p class="text-slate-500 text-lg">Der "Landed Cost" Vergleich: Wie skalieren die Standorte bei 2k, 5k und 10k Einheiten? [cite: 62, 67, 119, 122]</p>
+            <h2 class="text-5xl mb-6 italic text-emerald-900">Kosten-Transparenz.</h2>
+            <p class="text-slate-500 text-lg">Ein Landed-Cost Vergleich zwischen den Top-Standorten bei 10.000 Stück[cite: 439].</p>
         </div>
 
-        <div class="grid lg:grid-cols-3 gap-12">
-            <div class="lg:col-span-2 bg-white p-10 rounded-3xl shadow-2xl border border-slate-100">
-                <h4 class="text-center text-slate-400 uppercase text-xs tracking-widest mb-8 font-bold italic">Landed Cost Berlin pro Stück (€) nach Standort & Menge</h4>
-                <div class="chart-container">
-                    <canvas id="costComparisonChart"></canvas>
+        <div class="grid lg:grid-cols-3 gap-12 items-center">
+            <div class="lg:col-span-2 bg-white p-10 rounded-[50px] shadow-2xl border border-slate-100">
+                <h4 class="text-center text-slate-400 uppercase text-[10px] tracking-widest mb-10 font-bold italic">Landed Cost Berlin pro Stück (€) @10k</h4>
+                <div class="h-[400px]">
+                    <canvas id="costChart"></canvas>
                 </div>
             </div>
-
-            <div class="flex flex-col justify-center space-y-6">
-                <div class="bg-emerald-900 text-white p-8 rounded-3xl shadow-xl">
-                    <h4 class="text-xl mb-4 font-bold">Strategischer Take-away</h4>
+            
+            <div class="space-y-6">
+                <div class="bg-emerald-900 text-white p-10 rounded-[40px] shadow-xl">
+                    <h4 class="text-2xl font-bold mb-4 italic">Die EU-Differenz</h4>
                     <p class="text-sm opacity-80 leading-relaxed mb-6">
-                        Obwohl China bei 10k am günstigsten ist (0,57€), bietet die Schweiz mit 1,01€ den höchsten "Made-in"-Wert und ein patentiertes Inhaler-System ohne Importrisiko[cite: 51, 62].
+                        "Made in Germany" kostet ca. €0,37 mehr als China. Dieser Mehraufwand wird durch einen nur €0,50 höheren Verkaufspreis vollständig kompensiert – bei massiv geringerem Risiko.
                     </p>
-                    <div class="text-3xl font-bold text-emerald-400">84 - 92 %</div>
-                    <div class="text-xs uppercase tracking-tighter opacity-60">Bruttomarge im D2C-Modell [cite: 79]</div>
-                </div>
-                
-                <div class="bg-slate-100 p-8 rounded-3xl border border-slate-200">
-                    <h4 class="text-xl mb-2 text-slate-800">Setup-Effizienz</h4>
-                    <p class="text-xs text-slate-500 mb-4 italic">Einmalige Kosten für Regulatorik (CPSR/CPNP) sind bei EU-Herstellern oft bereits im Full-Service enthalten[cite: 57, 84].</p>
-                    <ul class="text-sm space-y-2 font-medium">
-                        <li class="flex items-center text-emerald-700"><i data-lucide="check" class="w-4 h-4 mr-2"></i> 0% Importzoll (CH/EU) [cite: 62]</li>
-                        <li class="flex items-center text-emerald-700"><i data-lucide="check" class="w-4 h-4 mr-2"></i> Lieferzeit 1-2 Wochen (EU) [cite: 8]</li>
-                    </ul>
+                    <div class="text-4xl font-bold text-emerald-400">84 - 92 %</div>
+                    <div class="text-xs uppercase font-bold tracking-widest opacity-60">Potenzielle D2C Marge [cite: 444]</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="produktion" class="py-24 bg-emerald-900 text-white px-6">
+    <section class="py-24 bg-emerald-900 text-white px-6">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-4xl text-center mb-16 italic">Produktions-Roadmap</h2>
-            
+            <h2 class="text-5xl text-center mb-16 italic leading-tight">Vom Pilot zum Scale.</h2>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white/5 backdrop-blur-sm p-10 rounded-3xl border border-white/10 text-center">
-                    <div class="text-emerald-400 text-xs font-bold uppercase mb-4 tracking-widest">Phase 1: Pilot</div>
-                    <h3 class="text-2xl mb-6 font-bold">CMD Goslar</h3>
-                    <p class="text-sm opacity-70 mb-8 leading-relaxed">Niedrigste Einstiegs-MOQ ab 300 Stück für Markttests[cite: 39]. Ideal für die Berliner Pilotcharge.</p>
-                    <div class="text-2xl font-bold">3,78 €</div>
-                    <div class="text-xs opacity-50">Kosten pro Stück @300 [cite: 72]</div>
+                <div class="bg-white/5 border border-white/10 p-10 rounded-[40px] text-center card-hover">
+                    <div class="text-emerald-400 text-[10px] font-black uppercase mb-4 tracking-[0.2em]">Phase 1: Pilot [cite: 446]</div>
+                    <h3 class="text-3xl font-bold mb-4">CMD Goslar</h3>
+                    <p class="text-sm opacity-60 mb-8 leading-relaxed">Günstigster EU-Einstieg ab 300 Stück. Validierung der Rezeptur & Feedback.</p>
+                    <div class="text-2xl font-bold">€3,78 / Stk. [cite: 435]</div>
                 </div>
-
-                <div class="bg-white/10 backdrop-blur-sm p-10 rounded-3xl border border-emerald-400/30 text-center scale-105 shadow-2xl">
-                    <div class="text-emerald-400 text-xs font-bold uppercase mb-4 tracking-widest">Phase 2: Launch</div>
-                    <h3 class="text-2xl mb-6 font-bold">Aromastick CH</h3>
-                    <p class="text-sm opacity-70 mb-8 leading-relaxed">Full-Service Inhaler-Spezialist. Höchste Qualität & Bio-Zertifizierung für Premium-Positionierung[cite: 16].</p>
-                    <div class="text-2xl font-bold">1,01 €</div>
-                    <div class="text-xs opacity-50">Kosten pro Stück @10k [cite: 62]</div>
+                <div class="bg-white/10 border border-emerald-400/30 p-10 rounded-[40px] text-center scale-105 shadow-2xl card-hover">
+                    <div class="text-emerald-400 text-[10px] font-black uppercase mb-4 tracking-[0.2em]">Phase 2: Launch [cite: 446]</div>
+                    <h3 class="text-3xl font-bold mb-4">Bergland Allgäu</h3>
+                    <p class="text-sm opacity-60 mb-8 leading-relaxed">5.000 - 15.000 Stück. Skalierung mit zertifizierter Naturkosmetik[cite: 446].</p>
+                    <div class="text-2xl font-bold">€0,94 / Stk. [cite: 430]</div>
                 </div>
-
-                <div class="bg-white/5 backdrop-blur-sm p-10 rounded-3xl border border-white/10 text-center">
-                    <div class="text-emerald-400 text-xs font-bold uppercase mb-4 tracking-widest">Phase 3: Scale</div>
-                    <h3 class="text-2xl mb-6 font-bold">Thailand OEM</h3>
-                    <p class="text-sm opacity-70 mb-8 leading-relaxed">Skalierung auf Weltmarkt-Niveau. Authentische Heritage-Story trifft auf Kostenführerschaft[cite: 136].</p>
-                    <div class="text-2xl font-bold">0,41 €</div>
-                    <div class="text-xs opacity-50">Kosten pro Stück @100k [cite: 119]</div>
+                <div class="bg-white/5 border border-white/10 p-10 rounded-[40px] text-center card-hover">
+                    <div class="text-emerald-400 text-[10px] font-black uppercase mb-4 tracking-[0.2em]">Phase 3: Scale [cite: 446]</div>
+                    <h3 class="text-3xl font-bold mb-4">Dual Sourcing</h3>
+                    <p class="text-sm opacity-60 mb-8 leading-relaxed">Aromastick Premium & Bergland Standard-Linie parallel ab 20k Stück[cite: 446].</p>
+                    <div class="text-2xl font-bold">€0,65 / Stk. [cite: 439]</div>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="downloads" class="py-24 bg-white px-6">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-4xl md:text-5xl mb-12">Knowledge Hub 2025</h2>
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-5xl text-center mb-16 italic">Knowledge Hub.</h2>
             <div class="grid md:grid-cols-2 gap-6">
-                <div class="bg-slate-50 p-8 rounded-3xl flex items-center justify-between border border-slate-100 hover:bg-slate-100 transition cursor-pointer shadow-sm group">
+                <div class="bg-slate-50 p-8 rounded-[30px] flex items-center justify-between border border-slate-100 hover:bg-emerald-50 transition cursor-pointer group shadow-sm">
                     <div class="flex items-center space-x-5">
-                        <div class="bg-emerald-500 p-3 rounded-xl text-white group-hover:scale-110 transition"><i data-lucide="file-text"></i></div>
-                        <span class="text-left">
-                            <span class="block font-bold text-slate-900">EU-Produktionsanalyse</span>
-                            <span class="text-xs text-slate-500 italic">Obstacles_EU_Produktion.pdf</span>
-                        </span>
+                        <div class="bg-emerald-500 p-3 rounded-2xl text-white group-hover:scale-110 transition shadow-lg"><i data-lucide="file-check"></i></div>
+                        <span class="text-left"><span class="block font-bold">EU-Produktionsanalyse</span><span class="text-[10px] text-slate-400 font-bold uppercase tracking-widest italic">Obstacles_EU_Produktion.pdf</span></span>
                     </div>
-                    <i data-lucide="download-cloud" class="w-6 h-6 text-slate-300"></i>
+                    <i data-lucide="arrow-down-circle" class="w-6 h-6 text-slate-300"></i>
                 </div>
-                <div class="bg-slate-50 p-8 rounded-3xl flex items-center justify-between border border-slate-100 hover:bg-slate-100 transition cursor-pointer shadow-sm group">
+                <div class="bg-slate-50 p-8 rounded-[30px] flex items-center justify-between border border-slate-100 hover:bg-emerald-50 transition cursor-pointer group shadow-sm">
                     <div class="flex items-center space-x-5">
-                        <div class="bg-emerald-500 p-3 rounded-xl text-white group-hover:scale-110 transition"><i data-lucide="box"></i></div>
-                        <span class="text-left">
-                            <span class="block font-bold text-slate-900">Supply Chain Masterfile</span>
-                            <span class="text-xs text-slate-500 italic">Obstacles_Produktion_SC.pdf</span>
-                        </span>
+                        <div class="bg-emerald-500 p-3 rounded-2xl text-white group-hover:scale-110 transition shadow-lg"><i data-lucide="truck"></i></div>
+                        <span class="text-left"><span class="block font-bold">Supply Chain Strategy</span><span class="text-[10px] text-slate-400 font-bold uppercase tracking-widest italic">Obstacles_Produktion_SupplyChain.pdf</span></span>
                     </div>
-                    <i data-lucide="download-cloud" class="w-6 h-6 text-slate-300"></i>
+                    <i data-lucide="arrow-down-circle" class="w-6 h-6 text-slate-300"></i>
                 </div>
-                <div class="bg-slate-50 p-8 rounded-3xl flex items-center justify-between border border-slate-100 hover:bg-slate-100 transition cursor-pointer shadow-sm group">
+                <div class="bg-slate-50 p-8 rounded-[30px] flex items-center justify-between border border-slate-100 hover:bg-emerald-50 transition cursor-pointer group shadow-sm">
                     <div class="flex items-center space-x-5">
-                        <div class="bg-emerald-500 p-3 rounded-xl text-white group-hover:scale-110 transition"><i data-lucide="bar-chart-3"></i></div>
-                        <span class="text-left">
-                            <span class="block font-bold text-slate-900">Marktanalyse 2025</span>
-                            <span class="text-xs text-slate-500 italic">Marktanalyse_Inhaler.pdf</span>
-                        </span>
+                        <div class="bg-emerald-500 p-3 rounded-2xl text-white group-hover:scale-110 transition shadow-lg"><i data-lucide="bar-chart"></i></div>
+                        <span class="text-left"><span class="block font-bold">Marktanalyse 2025</span><span class="text-[10px] text-slate-400 font-bold uppercase tracking-widest italic">Marktanalyse_Herbal_Inhaler.pdf</span></span>
                     </div>
-                    <i data-lucide="download-cloud" class="w-6 h-6 text-slate-300"></i>
+                    <i data-lucide="arrow-down-circle" class="w-6 h-6 text-slate-300"></i>
                 </div>
-                <div class="bg-slate-50 p-8 rounded-3xl flex items-center justify-between border border-slate-100 hover:bg-slate-100 transition cursor-pointer shadow-sm group">
+                <div class="bg-slate-50 p-8 rounded-[30px] flex items-center justify-between border border-slate-100 hover:bg-emerald-50 transition cursor-pointer group shadow-sm">
                     <div class="flex items-center space-x-5">
-                        <div class="bg-emerald-500 p-3 rounded-xl text-white group-hover:scale-110 transition"><i data-lucide="users"></i></div>
-                        <span class="text-left">
-                            <span class="block font-bold text-slate-900">Persona Deep-Dive</span>
-                            <span class="text-xs text-slate-500 italic">Obstacles_Zielgruppen.pdf</span>
-                        </span>
+                        <div class="bg-emerald-500 p-3 rounded-2xl text-white group-hover:scale-110 transition shadow-lg"><i data-lucide="users"></i></div>
+                        <span class="text-left"><span class="block font-bold">Persona Deep-Dive</span><span class="text-[10px] text-slate-400 font-bold uppercase tracking-widest italic">Obstacles_Zielgruppenanalyse.pdf</span></span>
                     </div>
-                    <i data-lucide="download-cloud" class="w-6 h-6 text-slate-300"></i>
+                    <i data-lucide="arrow-down-circle" class="w-6 h-6 text-slate-300"></i>
                 </div>
             </div>
         </div>
     </section>
 
     <footer class="py-16 bg-slate-50 border-t border-slate-200 text-center text-sm text-slate-400">
-        <div class="mb-6"><span class="text-2xl font-bold tracking-tighter text-emerald-900 opacity-30">OBSTACLES</span></div>
-        <p>&copy; 2025 OBSTACLES Herbal Inhaler. Alle Rechte vorbehalten. Dokumentation für Investorenzwecke.</p>
+        <div class="mb-6"><span class="text-2xl font-bold tracking-tighter text-emerald-900 opacity-20 italic">OBSTACLES</span></div>
+        <p class="max-w-2xl mx-auto px-6">Dieses Dokument basiert auf Marktforschungsdaten von 2025 und dient zur internen Strategieplanung. Alle Kostenberechnungen sind Schätzungen basierend auf Herstellerangeboten[cite: 215, 216].</p>
     </footer>
 
     <script>
-        // Initialize Icons
+        // Icons
         lucide.createIcons();
 
-        // Chart 1: Market Growth
+        // Chart 1: Market
         const mCtx = document.getElementById('marketChart').getContext('2d');
         new Chart(mCtx, {
             type: 'line',
             data: {
                 labels: ['2024', '2027', '2030', '2033', '2035'],
                 datasets: [{
-                    label: 'Marktwert DE (Mrd. USD)',
+                    label: 'Marktwert DE (Mrd. USD) [cite: 119]',
                     data: [6.26, 9.5, 14.2, 21.0, 24.76],
                     borderColor: '#10b981',
-                    backgroundColor: 'rgba(16, 185, 129, 0.1)',
+                    backgroundColor: 'rgba(16, 185, 129, 0.05)',
                     fill: true,
                     tension: 0.4,
                     pointRadius: 6,
@@ -275,64 +304,35 @@
             },
             options: {
                 responsive: true,
+                maintainAspectRatio: false,
                 plugins: { legend: { display: false } },
                 scales: { 
-                    y: { 
-                        beginAtZero: false, 
-                        grid: { color: '#f1f5f9' },
-                        ticks: { callback: value => '$' + value + ' Mrd' }
-                    }, 
+                    y: { beginAtZero: false, grid: { color: '#f1f5f9' }, ticks: { callback: v => '$' + v + ' Mrd' } }, 
                     x: { grid: { display: false } } 
                 }
             }
         });
 
-        // Chart 2: Detailed Cost Comparison (2k, 5k, 10k)
-        const cCtx = document.getElementById('costComparisonChart').getContext('2d');
+        // Chart 2: Costs @10k
+        const cCtx = document.getElementById('costChart').getContext('2d');
         new Chart(cCtx, {
             type: 'bar',
             data: {
-                labels: ['2.000 Stück', '5.000 Stück', '10.000 Stück'],
-                datasets: [
-                    {
-                        label: 'Aromastick (Schweiz)',
-                        data: [2.09, 1.38, 1.01],
-                        backgroundColor: '#10b981', // Emerald
-                        borderRadius: 8
-                    },
-                    {
-                        label: 'Bergland (Deutschland)',
-                        data: [1.95, 1.29, 0.94],
-                        backgroundColor: '#064e3b', // Dark Green
-                        borderRadius: 8
-                    },
-                    {
-                        label: 'Thailand OEM',
-                        data: [null, 1.03, 0.81], // 2k not available for TH in source
-                        backgroundColor: '#3b82f6', // Blue
-                        borderRadius: 8
-                    },
-                    {
-                        label: 'China OEM',
-                        data: [null, 0.74, 0.57], // 2k not available for CN in source
-                        backgroundColor: '#94a3b8', // Slate
-                        borderRadius: 8
-                    }
-                ]
+                labels: ['Aromastick (CH)', 'Bergland (DE)', 'Thailand OEM', 'China OEM'],
+                datasets: [{
+                    label: 'Kosten pro Stück [cite: 439]',
+                    data: [1.01, 0.94, 0.81, 0.57],
+                    backgroundColor: ['#10b981', '#064e3b', '#3b82f6', '#94a3b8'],
+                    borderRadius: 15,
+                    barThickness: 40
+                }]
             },
             options: {
                 responsive: true,
                 maintainAspectRatio: false,
-                plugins: {
-                    legend: { position: 'bottom', labels: { boxWidth: 12, padding: 20 } },
-                    tooltip: { backgroundColor: '#1e293b', padding: 12 }
-                },
-                scales: {
-                    y: {
-                        beginAtZero: true,
-                        grid: { color: '#f1f5f9' },
-                        ticks: { callback: value => value.toFixed(2) + ' €' }
-                    },
+                plugins: { legend: { display: false } },
+                scales: { 
+                    y: { beginAtZero: true, grid: { color: '#f1f5f9' }, ticks: { callback: v => v.toFixed(2) + ' €' } },
                     x: { grid: { display: false } }
                 }
             }
